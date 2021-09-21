@@ -36,13 +36,16 @@ void checkerboard(int height, int width)
 
 void cross(int size)
 {
-    for(int row = 0; row < size; row++)
+    for(int row = 1; row <= size; row++)
     {
-        for(int col = 0; col < size; col++)
+        for(int col = 1; col <= size; col++)
         {
-            if(col == row || col == col - row)
+            if(col == row || col == (size+1)-row)
             {
-                std::cout<<"* ";
+                std::cout<<"*";
+            }
+            else{
+                std::cout<<" ";
             }
         }
         std::cout<<"\n";
