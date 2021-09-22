@@ -51,3 +51,31 @@ void cross(int size)
         std::cout<<"\n";
     }
 }
+
+void lower(int length)
+{
+    for(int row = 0; row <= length; row++)
+    {
+        for(int col = 0; col < row; col++)
+        {
+            std::cout<<"* ";
+        }
+        std::cout<<"\n";
+    }
+}
+
+void upper(int length)
+{
+    for(int row = length; row > 0; row--)
+    {
+        for(int spc = length - row; spc > 0; spc--)
+        {
+            std::cout<<" ";
+        }
+        for(int col = row; col > 0; col--)
+        {
+            std::cout<<"*";
+        }
+        std::cout<<"\n";
+    }
+}

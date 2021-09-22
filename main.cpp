@@ -32,5 +32,26 @@ int main()
     cross(4);
     std::cout<<"Cross size = 10 \n";
     cross(10);
-    
+
+    std::cout<<"\n";
+    //Testing Task D
+    std::cout<<"Task D \n";
+    std::cout<<"Size = 6 \n";
+    lower(6);
+    std::cout<<"Task D \n";
+    std::cout<<"Size = 2 \n";
+    lower(2);    
+    std::cout<<"Task D \n";
+    std::cout<<"Size = 12 \n";
+    lower(12);
+
+    std::cout<<"\n";
+    //Testing Task E
+    std::cout<<"Task E \n";
+    std::cout<<"size = 5 \n";
+    upper(5);
+    std::cout<<"size = 7 \n";
+    upper(7);
+    std::cout<<"size = 3 \n";
+    upper(3);
 }
