@@ -64,5 +64,10 @@ int main()
     trapezoid(3,5);
     std::cout<<"Trapazoid height = 7, width = 12 \n";
     trapezoid(7,12);
+
+    std::cout<<"\n -------------------------- \n";
+    //Testing Task G
+    std::cout<<"Task G \n";
+    //void checkerboard3x3(11, 16);
     
 }

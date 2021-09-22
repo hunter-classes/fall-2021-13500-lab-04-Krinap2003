@@ -104,3 +104,14 @@ void trapezoid(int height, int width)
             std::cout<<"\n";
     }
 }
+
+void checkerboard3x3(int height, int width)
+{
+    for(int row = 0 ; row < height; row++)
+    {
+        for(int col = 0; col < width; col++)
+        {
+            
+        }
+    }
+}
