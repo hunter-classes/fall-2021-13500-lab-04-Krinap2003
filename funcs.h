@@ -6,3 +6,4 @@ void checkerboard(int width, int height);
 void cross(int size);
 void lower(int length);
 void upper(int length);
+void trapezoid(int height, int width);

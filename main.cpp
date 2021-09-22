@@ -15,7 +15,7 @@ int main()
     std::cout<<"Box width = 7, height = 4 \n";
     box(7, 4);
 
-    std::cout<<"\n";
+    std::cout<<"\n -------------------------- \n";
     //Testing Task B
     std::cout<<"Task B \n";
     std::cout<<"Checketboard width=11, height=6 \n";
@@ -23,7 +23,7 @@ int main()
     std::cout<<"Checketboard width=4, height=8 \n";
     checkerboard(8,4);
 
-    std::cout<<"\n";
+    std::cout<<"\n -------------------------- \n";
     //Testing Task C
     std::cout<<"Task C \n";
     std::cout<<"Cross size = 8 \n";
@@ -33,7 +33,7 @@ int main()
     std::cout<<"Cross size = 10 \n";
     cross(10);
 
-    std::cout<<"\n";
+    std::cout<<"\n -------------------------- \n";
     //Testing Task D
     std::cout<<"Task D \n";
     std::cout<<"Size = 6 \n";
@@ -45,7 +45,7 @@ int main()
     std::cout<<"Size = 12 \n";
     lower(12);
 
-    std::cout<<"\n";
+    std::cout<<"\n -------------------------- \n";
     //Testing Task E
     std::cout<<"Task E \n";
     std::cout<<"size = 5 \n";
@@ -54,4 +54,15 @@ int main()
     upper(7);
     std::cout<<"size = 3 \n";
     upper(3);
+
+    std::cout<<"\n -------------------------- \n";
+    //Testing Task F
+    std::cout<<"Task F \n";
+    std::cout<<"Trapazoid height = 5, width = 12 \n";
+    trapezoid(5,12);
+    std::cout<<"Trapazoid height = 3, width = 5 \n";
+    trapezoid(3,5);
+    std::cout<<"Trapazoid height = 7, width = 12 \n";
+    trapezoid(7,12);
+    
 }

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 #include "funcs.h"
 
 //Take in two int parameters for height and width
@@ -77,5 +78,29 @@ void upper(int length)
             std::cout<<"*";
         }
         std::cout<<"\n";
+    }
+}
+
+//Takes in two int paramets for height and width
+// and the trapezoid of that size with *
+void trapezoid(int height, int width)
+{
+     for(int row = 0; row < height; row++)
+    {
+        if(height % 6 == 1)
+        {
+            std::cout << "Impossible shape!" <<std::endl;
+            break;
+        }
+        for(int spc = 0; spc < row; spc++)
+        {
+             std::cout<<" ";
+        }
+        for(int col = width; col > 0; col--)
+        {
+            std::cout<<"*";
+        }
+            width = width - 2;
+            std::cout<<"\n";
     }
 }
