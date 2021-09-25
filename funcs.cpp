@@ -16,6 +16,7 @@ void box(int width, int height)
     }
 }
 
+//Prints a checkerboard with start of the height and width given
 void checkerboard(int height, int width)
 {
     for(int row = 0; row < height; row++)
@@ -35,6 +36,7 @@ void checkerboard(int height, int width)
     }
 }
 
+//Print a cross pattern with * of the size given
 void cross(int size)
 {
     for(int row = 1; row <= size; row++)
@@ -53,6 +55,7 @@ void cross(int size)
     }
 }
 
+//Prints increasing number of * every row until the length is reached
 void lower(int length)
 {
     for(int row = 0; row <= length; row++)
@@ -65,6 +68,8 @@ void lower(int length)
     }
 }
 
+//Print decreasing number of * as the row increased starts with the number of 
+//stars equal to length length
 void upper(int length)
 {
     for(int row = length; row > 0; row--)
@@ -105,13 +110,43 @@ void trapezoid(int height, int width)
     }
 }
 
-void checkerboard3x3(int height, int width)
+//Prints checkerboard with the given height and weigh with 3x3 *
+std::string checkerboard3x3(int height, int width)
 {
-    for(int row = 0 ; row < height; row++)
+    std::string endResult = "";
+   
+    for(int row = 0; row < height; row++)
     {
+        int starCount = 0;
+        int spaceCount = 0;
         for(int col = 0; col < width; col++)
         {
-            
+           if ((col%6 < 3 && row % 6 < 3) || (col % 6 >= 3 && row % 6 >= 3))
+           {
+            if(starCount < 3)
+            {
+                endResult += "*";
+            }
+            starCount++;
+            if(starCount == 3)
+            {
+                starCount = 0;
+            }
+            }
+            else
+            {
+                if(spaceCount < 3)
+                {
+                    endResult+=" ";
+                }
+                spaceCount++;
+                if(spaceCount == 3)
+                {
+                    spaceCount = 0;
+                }
+            }
         }
+        endResult+="\n";
     }
+    return endResult;
 }

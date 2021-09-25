@@ -14,6 +14,8 @@ int main()
     box(5, 4);
     std::cout<<"Box width = 7, height = 4 \n";
     box(7, 4);
+    std::cout<<"Box width = 15, height = 20 \n";
+    box(15, 20);
 
     std::cout<<"\n -------------------------- \n";
     //Testing Task B
@@ -22,7 +24,9 @@ int main()
     checkerboard(6,11);
     std::cout<<"Checketboard width=4, height=8 \n";
     checkerboard(8,4);
-
+    std::cout<<"Checketboard width=24, height=13 \n";
+    checkerboard(13,24);
+    
     std::cout<<"\n -------------------------- \n";
     //Testing Task C
     std::cout<<"Task C \n";
@@ -68,6 +72,10 @@ int main()
     std::cout<<"\n -------------------------- \n";
     //Testing Task G
     std::cout<<"Task G \n";
-    //void checkerboard3x3(11, 16);
-    
+    std::cout<<"Checherboard3x3, height = 11, width= 16 \n";
+    std::cout<<checkerboard3x3(11, 16);
+    std::cout<<"Checherboard3x3, height = 27, width= 27 \n";
+    std::cout<<checkerboard3x3(27, 27);
+    std::cout<<"Checherboard3x3, height = 5, width= 10 \n";
+    std::cout<<checkerboard3x3(5, 10);
 }
