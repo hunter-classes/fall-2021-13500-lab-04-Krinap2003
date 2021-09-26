@@ -114,39 +114,35 @@ void trapezoid(int height, int width)
 std::string checkerboard3x3(int height, int width)
 {
     std::string endResult = "";
-   
+    
     for(int row = 0; row < height; row++)
     {
-        int starCount = 0;
-        int spaceCount = 0;
         for(int col = 0; col < width; col++)
         {
-           if ((col%6 < 3 && row % 6 < 3) || (col % 6 >= 3 && row % 6 >= 3))
-           {
-            if(starCount < 3)
+            if((row/3)%2 == 0) //if the row is even it enters
             {
-                endResult += "*";
-            }
-            starCount++;
-            if(starCount == 3)
-            {
-                starCount = 0;
-            }
-            }
-            else
-            {
-                if(spaceCount < 3)
+                if((col/3)%2 == 0) //if the col is even it print *
                 {
-                    endResult+=" ";
+                    endResult += "*";
                 }
-                spaceCount++;
-                if(spaceCount == 3)
+                else //otherwise it print a space
                 {
-                    spaceCount = 0;
+                    endResult += " ";
+                }
+            }
+            else //if the row is odd it enter this part
+            {
+                if((col/3)%2 == 0) // if the col is even space is printed bc the row was odd
+                {
+                    endResult += " ";
+                }
+                else // otherwise it prints a space
+                {
+                    endResult += "*";
                 }
             }
         }
-        endResult+="\n";
+        endResult += "\n";
     }
     return endResult;
 }
