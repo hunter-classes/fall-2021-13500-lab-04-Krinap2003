@@ -111,38 +111,35 @@ void trapezoid(int height, int width)
 }
 
 //Prints checkerboard with the given height and weigh with 3x3 *
-std::string checkerboard3x3(int height, int width)
+void checkerboard3x3(int height, int width)
 {
-    std::string endResult = "";
-    
     for(int row = 0; row < height; row++)
     {
         for(int col = 0; col < width; col++)
         {
-            if((row/3)%2 == 0) //if the row is even it enters
+            if((row/3)%2 != 0) //if the row is odd it enters
             {
-                if((col/3)%2 == 0) //if the col is even it print *
+                if((col/3)%2 != 0) // if the col is odd star is printed
                 {
-                    endResult += "*";
-                }
-                else //otherwise it print a space
-                {
-                    endResult += " ";
-                }
-            }
-            else //if the row is odd it enter this part
-            {
-                if((col/3)%2 == 0) // if the col is even space is printed bc the row was odd
-                {
-                    endResult += " ";
+                    std::cout<<"*";
                 }
                 else // otherwise it prints a space
                 {
-                    endResult += "*";
+                    std::cout<<" ";
+                }
+            }
+            else //if the row is even it enter this part
+            {
+                if((col/3)%2 != 0) //if the col is even it print a space 
+                {
+                    std::cout<<" ";
+                }
+                else //otherwise it print a star is printed
+                {
+                    std::cout<<"*";
                 }
             }
         }
-        endResult += "\n";
+        std::cout<<"\n";
     }
-    return endResult;
 }

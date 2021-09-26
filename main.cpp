@@ -73,9 +73,9 @@ int main()
     //Testing Task G
     std::cout<<"Task G \n";
     std::cout<<"Checherboard3x3, height = 11, width= 16 \n";
-    std::cout<<checkerboard3x3(11, 16);
+    checkerboard3x3(11, 16);
     std::cout<<"Checherboard3x3, height = 27, width= 27 \n";
-    std::cout<<checkerboard3x3(27, 27);
+    checkerboard3x3(27, 27);
     std::cout<<"Checherboard3x3, height = 5, width= 10 \n";
-    std::cout<<checkerboard3x3(5, 10);
+    checkerboard3x3(5, 10);
 }
